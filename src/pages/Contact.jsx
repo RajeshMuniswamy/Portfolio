@@ -86,7 +86,7 @@ const Contact = forwardRef((props, ref) => {
         {/* Resume Button */}
         <div className="flex justify-center mb-5">
           <a
-            href="/RajeshM_Backend_Developer.pdf"
+            href="/RajeshM.pdf"
             download
             className="flex items-center gap-2 bg-[#FF014F] text-white px-6 py-3 rounded-lg hover:bg-[#e60045] transition shadow-md"
           >
