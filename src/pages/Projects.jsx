@@ -5,7 +5,10 @@ import intervwd from "../assets/Intervwd-logo.png";
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="h-screen bg-[#ecf0f3] flex justify-center py-25">
+    <div
+      ref={ref}
+      className="min-h-screen bg-[#ecf0f3] flex justify-center py-10"
+    >
       <div className="max-w-6xl w-full px-6">
         <div className="mb-5 text-center">
           <div className="text-sm text-gray-500 font-bold tracking-[4px]">
@@ -16,7 +19,7 @@ const Projects = forwardRef((props, ref) => {
           </h1>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-3 pl-6 rounded-xl shadow-md hover:shadow-2xl transition">
             <img src={servicewrk} alt="" className="h-15 mx-auto" />
             <h3 className="text-xl text-center font-semibold mb-2">
@@ -37,7 +40,6 @@ const Projects = forwardRef((props, ref) => {
                 management.
               </li>
             </ul>
-            {/*  bg-[#dce9f2] rounded-xl */}
 
             <div className="mt-3 flex flex-wrap gap-2 text-xs text-gray-600 font-semibold">
               <span className="bg-[#dce9f2] px-3 py-1 rounded-lg">Node.js</span>
@@ -58,7 +60,7 @@ const Projects = forwardRef((props, ref) => {
                 href="https://servicewrk.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-gray-400 px-23 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
+                className="inline-block border border-gray-400 px-6 md:px-10 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
               >
                 Visit ServiceWRK →
               </a>
@@ -103,7 +105,7 @@ const Projects = forwardRef((props, ref) => {
                 href="https://pharmawrk.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-gray-400 px-23 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
+                className="inline-block border border-gray-400 px-6 md:px-10 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
               >
                 Visit PharmaWRK →
               </a>
@@ -145,7 +147,7 @@ const Projects = forwardRef((props, ref) => {
                 href="https://intervwd.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-gray-400 px-23 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
+                className="inline-block border border-gray-400 px-6 md:px-10 py-1 rounded-lg text-sm font-semibold hover:bg-gray-200 transition"
               >
                 Visit Intervwd →
               </a>

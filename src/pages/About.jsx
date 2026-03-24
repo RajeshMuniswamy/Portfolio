@@ -6,12 +6,12 @@ const About = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="h-[90vh] bg-[#ecf0f3] flex justify-center items-center"
+      className="min-h-screen bg-[#ecf0f3] flex justify-center items-center px-4 pt-24 md:pt-28"
     >
-      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center px-10">
+      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center px-4 md:px-10 gap-8">
         {/* LEFT */}
         <div className="flex-1">
-          <div className="mt-30 text-sm text-gray-500 font-bold tracking-[4px]">
+          <div className="mt-6 md:mt-0 text-sm text-gray-500 font-bold tracking-[4px]">
             WELCOME TO MY WORLD
           </div>
 
@@ -34,7 +34,7 @@ const About = forwardRef((props, ref) => {
           <img
             src={profile}
             alt="Rajesh"
-            className="mt-30 w-72 rounded-xl shadow-xl hover:shadow-2xl"
+            className="w-56 md:w-72 rounded-xl shadow-xl hover:shadow-2xl"
           />
         </div>
       </div>

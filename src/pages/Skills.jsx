@@ -1,86 +1,3 @@
-// import React, { forwardRef, useState } from "react";
-
-// const Skills = forwardRef((props, ref) => {
-//   const skills = [
-//     {
-//       title: "Backend",
-//       items: [
-//         "Node.js",
-//         "Express.js",
-//         "RESTful APIs",
-//         "GraphQL",
-//         "Event-Driven Architecture",
-//         "Webhooks",
-//         "MQTT",
-//       ],
-//     },
-//     {
-//       title: "Cloud & Serverless (AWS)",
-//       items: [
-//         "AWS Lambda",
-//         "API Gateway",
-//         "Cognito",
-//         "DynamoDB",
-//         "S3",
-//         "SQS",
-//         "EventBridge",
-//         "SES",
-//       ],
-//     },
-//     {
-//       title: "Database",
-//       items: ["DynamoDB", "MongoDB", "PostgreSQL"],
-//     },
-//     {
-//       title: "Frontend (Working Knowledge)",
-//       items: ["React", "Tailwind CSS", "HTML", "CSS"],
-//     },
-//     {
-//       title: "Tools & Platforms",
-//       items: ["VS Code", "Git", "GitHub", "Postman"],
-//     },
-//   ];
-
-//   return (
-//     <div ref={ref} className="h-screen bg-[#ecf0f3] py-25">
-//       <div>
-//         <div className="mb-5">
-//           <h2 className="text-center font-bold tracking-[4px] text-gray-500">
-//             SKILLS
-//           </h2>
-//           <h1 className="text-center font-bold text-4xl">
-//             My
-//             <span className="text-[#FF014F]"> Tech Stack</span>
-//           </h1>
-//         </div>
-//         <div className="grid gap-5 mx-35 md:grid-cols-2">
-//           {skills.map((skill, index) => (
-//             <div
-//               key={index}
-//               className="bg-white shadow-md rounded-xl p-3 hover:shadow-lg transition"
-//             >
-//               <h3 className="font-semibold text-lg mb-3">{skill.title}</h3>
-
-//               <div className="flex flex-wrap gap-2">
-//                 {skill.items.map((item, i) => (
-//                   <span
-//                     key={i}
-//                     className="bg-gray-200 text-gray-700 px-5 py-1 rounded-full text-sm"
-//                   >
-//                     {item}
-//                   </span>
-//                 ))}
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// });
-
-// export default Skills;
-
 import React, { forwardRef } from "react";
 
 import {
@@ -170,20 +87,20 @@ const Skills = forwardRef((props, ref) => {
   ];
 
   return (
-    <div ref={ref} className="min-h-screen bg-[#ecf0f3] py-24">
-      {/* Section Title */}
-      <div className="mb-5">
-        <h2 className="text-center font-bold tracking-[4px] text-gray-500">
-          SKILLS
-        </h2>
-
-        <h1 className="text-center font-bold text-4xl">
+    <div
+      ref={ref}
+      className=" bg-[#ecf0f3] px-4 py-8 md:py-2 scroll-mt-24 md:scroll-mt-28"
+    >
+      {/* Title */}
+      <div className="mb-6 text-center">
+        <h2 className="font-bold tracking-[4px] text-gray-500">SKILLS</h2>
+        <h1 className="font-bold text-3xl md:text-4xl">
           My <span className="text-[#FF014F]">Tech Stack</span>
         </h1>
       </div>
 
-      {/* Skills Grid */}
-      <div className="grid gap-6 mx-10 md:mx-30 md:grid-cols-2">
+      {/* Grid */}
+      <div className="grid gap-4 md:px-20 md:grid-cols-2 pb-6">
         {skills.map((skill, index) => (
           <div
             key={index}

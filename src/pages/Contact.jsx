@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import {
-  FaGithub,
   FaLinkedin,
   FaPhone,
   FaMapMarkerAlt,
@@ -8,21 +7,20 @@ import {
 } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { HiDocumentDownload } from "react-icons/hi";
-import { SiGmail } from "react-icons/si";
 
 const Contact = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className="h-[90vh] bg-[#ecf0f3] flex items-center justify-center py-25"
+      className=" bg-[#ecf0f3] px-4 pt-4 md:pt-2 pb-16 scroll-mt-20 md:scroll-mt-24"
     >
-      <div className="text-center">
+      <div className="text-center max-w-xl w-full mx-auto">
         {/* Title */}
-        <h1 className="text-4xl font-bold mb-2">
+        <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Connect <span className="text-[#FF014F]">& Contact</span>
         </h1>
 
-        <h3 className="text-xl text-gray-500 mb-6">
+        <h3 className="text-lg md:text-xl text-gray-500 mb-6">
           Let's Connect and build something great!
         </h3>
 
@@ -37,14 +35,13 @@ const Contact = forwardRef((props, ref) => {
             href="mailto:rajeshm841997@gmail.com"
             className="flex items-center gap-3 text-gray-700 hover:text-[#FF014F] transition"
           >
-            {/* <SiGmail className="text-xl text-orange-500" /> */}
             <TfiEmail className="text-xl text-orange-500" />
-            <span>rajeshm841997@gmail.com</span>
+            <span className="break-all">rajeshm841997@gmail.com</span>
           </a>
         </div>
 
-        {/* Phone */}
-        <div className="flex justify-center items-center gap-6 mb-4 text-gray-700">
+        {/* Phone + WhatsApp */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4 text-gray-700">
           <a
             href="tel:+917975345223"
             className="flex items-center gap-2 hover:text-[#FF014F]"
@@ -70,20 +67,20 @@ const Contact = forwardRef((props, ref) => {
           <span>Bangalore, India</span>
         </div>
 
-        {/* Social Icons */}
+        {/* LinkedIn */}
         <div className="flex justify-center mb-5">
           <a
             href="https://www.linkedin.com/in/rajesh-m-a7bb78257/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0077b5] flex items-center gap-3"
+            className="text-[#0077b5] flex items-center gap-2"
           >
             <FaLinkedin />
             <span className="font-medium">LinkedIn</span>
           </a>
         </div>
 
-        {/* Resume Button */}
+        {/* Resume */}
         <div className="flex justify-center mb-5">
           <a
             href="RajeshM.pdf"
@@ -95,7 +92,8 @@ const Contact = forwardRef((props, ref) => {
           </a>
         </div>
 
-        <p className="text-gray-500 text-sm border-t pt-4 mt-3">
+        {/* Footer */}
+        <p className="text-gray-500 text-sm border-t pt-4 mt-4">
           ✨ Thanks for visiting my portfolio!
         </p>
       </div>
